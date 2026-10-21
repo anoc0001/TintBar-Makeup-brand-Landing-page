@@ -1,28 +1,490 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blossom & Bloom co</title>
-  <link rel="stylesheet" href="pratice.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tint Bar</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header class="main-content">
-    <div class="content">
-      <h1>Lorem ipsum dolor sit.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur distinctio laudantium dolores. Nulla quibusdam reprehenderit eum sit minus aliquid!</p>
+  <div class="free-shipping">
+Free shipping on orders over $50</div>
+ <header class="header">
+  
+  <div class="nav-left">
+   <a class="logo" href="#" aria-label="Tint Bar home">
+     <img src="images/logo.png" alt="Tint Bar">
+   </a>
+ </div>
 
-    </div>
-    <div class="more">
-      <h1 >more content D:</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, mollitia adipisci magnam voluptatibus repellendus fuga ut repellat exercitationem eaque amet, omnis aliquam fugiat laudantium id dicta at? Consectetur iure porro illum laudantium excepturi a laborum!
+  <nav class="nav-center" id="mobile-navigation">
+    <ul class="nav-links">
+      <li class="nav-item"><a href="#">Gift Guide</a></li>
+      <li class="nav-item">
+        <a class="dropdown-trigger" href="#" aria-expanded="false" aria-haspopup="true">Makeup</a>
+        <div class="dropdown">
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Shop All</a></li>
+              <li><a href="#">Bestsellers</a></li>
+              <li><a href="#">Face</a></li>
+              <li><a href="#">Lip</a></li>
+              <li><a href="#">Brow</a></li>
+              <li><a href="#">Eye</a></li>
+              <li><a href="#">Cheek</a></li>
+              <li><a href="#">Save with Sets</a></li>
+            </ul>
+            <a class="dropdown-image" href="#">
+              <img src="images/hover-1.png" alt="Meet your dream brows">
+              <span>Meet your dream brows <span aria-hidden="true">→</span></span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="dropdown-trigger" href="#" aria-expanded="false" aria-haspopup="true">Skincare</a>
+        <div class="dropdown">
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Moisturizers</a></li>
+              <li><a href="#">Cleansers</a></li>
+              <li><a href="#">Treatments</a></li>
+              <li><a href="#">Sunscreen</a></li>
+              <li><a href="#">Save with Sets</a></li>
+              <li><a href="#">All Skincare</a></li>
+            </ul>
+            <a class="dropdown-image" href="#">
+              <img src="images/hover-2.png" alt="Explore skincare">
+              <span>Find your skincare routine <span aria-hidden="true">→</span></span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#">Community</a></li>
+    </ul>
+  </nav>
 
-      Sit magni soluta porro fugit placeat eius itaque, accusamus quisquam voluptates reiciendis pariatur, vitae molestiae. Minima, quos reprehenderit autem animi, nisi necessitatibus eligendi quis modi, facilis ipsam nihil odit quaerat! Nisi doloribus harum culpa ipsam!
-      
-      Sint corporis animi repudiandae. Aliquid illum, tenetur magnam provident molestiae rem doloremque aspernatur quia reiciendis est facilis enim praesentium officia sequi qui debitis exercitationem quaerat hic quos recusandae. Architecto repudiandae aperiam tempora iste saepe error.
-      
-      Provident aut suscipit aspernatur doloribus illum assumenda cupiditate perferendis dolores! Obcaecati omnis magnam ipsam voluptas ipsa eos explicabo quisquam architecto similique, sunt repellendus animi a doloribus ab deserunt. Dicta neque nostrum modi, illum debitis dolorem.</p>
+ <div class="nav-right">
+  <button class="nav-icon favorite" aria-label="Favorites">
+    <i class="fa-regular fa-heart" aria-hidden="true"></i>
+    <span class="sr-only">Favorites</span>
+  </button>
+
+  <a class="nav-icon account" href="/account" aria-label="Account">
+    <i class="fa-regular fa-user" aria-hidden="true"></i>
+    <span class="sr-only">Account</span>
+  </a>
+
+  <a class="nav-icon cart" href="/cart" aria-label="Cart">
+    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+    <span class="sr-only">Cart</span>
+  </a>
+
+  <button class="nav-icon menu" aria-label="Menu" aria-controls="mobile-navigation" aria-expanded="false">
+    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    <span class="sr-only">Menu</span>
+  </button>
+</div>
+
+</header>
+
+
+
+  <section class="hero">
+  <img src="images/bann3.png" alt="TellMi Beauty Banner" class="hero-img" />
+  <div class="hero-overlay">
+    <div class="hero-text">
+   <!-- <h1>Discover Your Perfect Shade</h1>--> 
+      <button class="banner-button">Shop Now</button>
     </div>
-    
-  </header>
+  </div>
+</section>
+
+
+ <section class="products-section">
+  <div class="products-header">
+    <h2>Shop All</h2>
+    <div class="products-actions">
+      <button class="see-all" onclick="location.href='/shop'">See all products</button>
+    </div>
+  </div>
+
+  <div class="products-carousel-wrap">
+    <button class="carousel-arrow prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <div class="products-carousel" id="productsCarousel">
+      <!-- Product 1 (NEW) -->
+      <article class="product-card">
+        <button class="like-btn" aria-label="Like"><i class="fa-regular fa-heart"></i></button>
+        <div class="badge">NEW</div>
+        <div class="product-images">
+          <img class="product-image-primary" src="images/product-1.png" alt="Product 1">
+          <img class="product-image-hover" src="images/hover-1.png" alt="" aria-hidden="true">
+        </div>
+        <h3 class="product-title">Lip Tint</h3>
+        <div class="product-meta">
+          <span class="price">$15.00</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Product 2 (NEW) -->
+      <article class="product-card">
+        <button class="like-btn" aria-label="Like"><i class="fa-regular fa-heart"></i></button>
+        <div class="badge">NEW</div>
+        <div class="product-images">
+          <img class="product-image-primary" src="images/Cosmetic Pencil Close-Up (1).png" alt="Product 2">
+          <img class="product-image-hover" src="images/hover-2.png" alt="" aria-hidden="true">
+        </div>
+        <h3 class="product-title">Beauty Blender</h3>
+        <div class="product-meta">
+          <span class="price">$10.00</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Product 3 (NEW) -->
+      <article class="product-card">
+        <button class="like-btn" aria-label="Like"><i class="fa-regular fa-heart"></i></button>
+        <div class="badge">NEW</div>
+        <div class="product-images">
+          <img class="product-image-primary" src="images/Red Lipstick Close-Up.png" alt="Product 3">
+          <img class="product-image-hover" src="images/hover-3.png" alt="" aria-hidden="true">
+        </div>
+        <h3 class="product-title">Lip Jam</h3>
+        <div class="product-meta">
+          <span class="price">$12.00</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Product 4 (NEW) -->
+      <article class="product-card">
+        <button class="like-btn" aria-label="Like"><i class="fa-regular fa-heart"></i></button>
+        <div class="badge">NEW</div>
+        <div class="product-images">
+          <img class="product-image-primary" src="images/makeupgeek_xoxo001.jpg" alt="Product 4">
+          <img class="product-image-hover" src="images/hover-4.png" alt="" aria-hidden="true">
+        </div>
+        <h3 class="product-title">Cherry Pie</h3>
+        <div class="product-meta">
+          <span class="price">$14.00</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Product 5 (NEW) -->
+      <article class="product-card">
+        <button class="like-btn" aria-label="Like"><i class="fa-regular fa-heart"></i></button>
+        <div class="badge">NEW</div>
+        <div class="product-images">
+          <img class="product-image-primary" src="images/product-5.png" alt="Product 5">
+          <img class="product-image-hover" src="images/hover-5.png" alt="" aria-hidden="true">
+        </div>
+        <h3 class="product-title">Gloss Balm</h3>
+        <div class="product-meta">
+          <span class="price">$18.00</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="product-card">
+        <button class="like-btn" aria-label="Like"><i class="fa-regular fa-heart"></i></button>
+        <div class="product-images">
+          <img class="product-image-primary" src="images/product-6.png" alt="Product 6">
+          <img class="product-image-hover" src="images/hover-6.jpeg" alt="" aria-hidden="true">
+        </div>
+        <h3 class="product-title">Tint Set</h3>
+        <div class="product-meta">
+          <span class="price">$28.00</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Product 7 -->
+      <article class="product-card">
+        <button class="like-btn" aria-label="Like"><i class="fa-regular fa-heart"></i></button>
+        <div class="product-images">
+          <img class="product-image-primary" src="images/product-7.png" alt="Product 7">
+          <img class="product-image-hover" src="images/hover-7.jpeg" alt="" aria-hidden="true">
+        </div>
+        <h3 class="product-title">Matte Tint</h3>
+        <div class="product-meta">
+          <span class="price">$16.00</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Product 8 -->
+      <article class="product-card">
+        <button class="like-btn" aria-label="Like"><i class="fa-regular fa-heart"></i></button>
+        <div class="product-images">
+          <img class="product-image-primary" src="images/product-8.png" alt="Product 8">
+          <img class="product-image-hover" src="images/hover-8.png" alt="" aria-hidden="true">
+        </div>
+        <h3 class="product-title">Hydra Tint</h3>
+        <div class="product-meta">
+          <span class="price">$20.00</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </article>
+    </div>
+
+    <button class="carousel-arrow next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</section>
+
+  <section class="feature">
+    <div class="feature-img"><img src="images/lip-website Banner (4).png" alt="Model" /></div>
+    <div class="feature-text">
+      <div class="feature-copy">
+        <h2>Texture. Shape. Result.</h2>
+        <p>Perfect formulas designed to enhance your natural beauty.</p>
+      </div>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+   <section class="categories">
+    <div class="category">
+      <img src="images/shade-finder.jpeg" alt="Shade Finder">
+      <p>Match MY Shade</p>
+    </div>
+    <div class="category">
+      <img src="images/blush.jpeg" alt="Makeup">
+      <p>Blush</p>
+    </div>
+    <div class="category">
+      <img src="images/lip (2).jpeg" alt="Lip Gloss">
+      <p>LIP GLOSS</p>
+    </div>
+    <div class="category">
+      <img src="images/skincare.jpeg" alt="Skincare">
+      <p>SKINCARE</p>
+    </div>
+    <div class="category">
+      <img src="images/giftset.jpeg" alt="Gift Sets">
+      <p>GIFT SETS</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <p class="about-eyebrow">OUR STORY</p>
+      <h2>Tint Bar — Conscious Beauty</h2>
+      <p>We create products that work for you, without compromise.</p>
+      <button>Discover More</button>
+    </div>
+    <div class="about-img"><img src="images/aboutandnew.png" alt="Lip Gloss" /></div>
+  </section>
+
+  <section class="community">
+  <h2>JOIN OUR COMMUNITY</h2>
+
+  <div class="community-collage">
+    <div class="community-item item-1">
+      <img src="images/4d0b5e35d9ea7a4bb5b26d47c7963d52.jpg" alt="Community 1">
+    </div>
+
+    <div class="community-item item-2">
+      <img src="images/Hourglass-Phantom-Volumizing-Glossy-Balm-shades.jpg" alt="Community 2">
+    </div>
+
+    <div class="community-item item-3">
+      <img src="images/ec137390ed2765bdc257723934e45e72.jpg" alt="Community 3">
+    </div>
+  </div>
+
+  <p>Join our community of beauty lovers and share your story.</p>
+  <button class="community-btn"> Join Now</button>
+  
+</section>
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>TintBar</h4>
+      <p>Conscious beauty for every day.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Shop</h4>
+      <a href="#">Lip Tints</a>
+      <a href="#">Blenders</a>
+      <a href="#">Sets</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>About</h4>
+      <a href="#">Our Story</a>
+      <a href="#">Community</a>
+      <a href="#">Sustainability</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Newsletter</h4>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 TintBar Beauty</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Minimal JS for carousel scrolling and buttons -->
+<script>
+(function () {
+  const carousel = document.getElementById('productsCarousel');
+  const btnPrev = document.querySelector('.carousel-arrow.prev');
+  const btnNext = document.querySelector('.carousel-arrow.next');
+
+  // Calculate one card scroll amount dynamically
+  function cardWidth() {
+    const card = carousel.querySelector('.product-card');
+    if (!card) return carousel.clientWidth;
+    const style = getComputedStyle(carousel);
+    const gap = parseFloat(style.gap || 16); // fallback
+    return card.getBoundingClientRect().width + gap;
+  }
+
+  btnPrev.addEventListener('click', () => {
+    carousel.scrollBy({ left: -cardWidth(), behavior: 'smooth' });
+  });
+
+  btnNext.addEventListener('click', () => {
+    carousel.scrollBy({ left: cardWidth(), behavior: 'smooth' });
+  });
+
+  // Mouse drag for desktop
+  let isDown = false, startX, scrollLeft;
+  carousel.addEventListener('mousedown', (e) => {
+    isDown = true;
+    carousel.classList.add('dragging');
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+  });
+  carousel.addEventListener('mouseleave', () => { isDown = false; carousel.classList.remove('dragging'); });
+  carousel.addEventListener('mouseup', () => { isDown = false; carousel.classList.remove('dragging'); });
+  carousel.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 1; // scroll speed
+    carousel.scrollLeft = scrollLeft - walk;
+  });
+
+  // Touch support: native scrolling works; add snap-to-card on touchend
+  let touchStartX = 0, touchStartScroll = 0;
+  carousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartScroll = carousel.scrollLeft;
+  });
+
+  carousel.addEventListener('touchend', () => {
+    // snap to nearest card
+    const cw = cardWidth();
+    const index = Math.round(carousel.scrollLeft / cw);
+    carousel.scrollTo({ left: index * cw, behavior: 'smooth' });
+  });
+
+  // Optional: keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') btnNext.click();
+    if (e.key === 'ArrowLeft') btnPrev.click();
+  });
+})();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.getElementById('productsCarousel');
+  const btnPrev = document.querySelector('.carousel-arrow.prev');
+  const btnNext = document.querySelector('.carousel-arrow.next');
+
+  const cardWidth = () => {
+    const card = carousel.querySelector('.product-card');
+    if (!card) return 0;
+    const gap = parseFloat(getComputedStyle(carousel).gap || 16); // Fallback for gap
+    return card.getBoundingClientRect().width + gap;
+  };
+
+  btnPrev.addEventListener('click', () => {
+    carousel.scrollBy({ left: -cardWidth(), behavior: 'smooth' });
+  });
+
+  btnNext.addEventListener('click', () => {
+    carousel.scrollBy({ left: cardWidth(), behavior: 'smooth' });
+  });
+
+  // Native touchpad/touch scroll works automatically with overflow-x: auto
+  //  this ensures both click and touch work seamlessly
+});
+
+</script>
+<script>
+  const header = document.querySelector('.header');
+  const menuButton = header.querySelector('.menu');
+
+  menuButton.addEventListener('click', () => {
+    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!isExpanded));
+    header.classList.toggle('menu-open', !isExpanded);
+
+    if (isExpanded) {
+      dropdownTriggers.forEach((trigger) => {
+        trigger.setAttribute('aria-expanded', 'false');
+        trigger.closest('.nav-item').classList.remove('dropdown-open');
+      });
+    }
+  });
+
+  const dropdownTriggers = header.querySelectorAll('.dropdown-trigger');
+
+  dropdownTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', (event) => {
+      event.preventDefault();
+      const item = trigger.closest('.nav-item');
+      const shouldOpen = !item.classList.contains('dropdown-open');
+
+      dropdownTriggers.forEach((otherTrigger) => {
+        otherTrigger.setAttribute('aria-expanded', 'false');
+        otherTrigger.closest('.nav-item').classList.remove('dropdown-open');
+      });
+
+      if (shouldOpen) {
+        trigger.setAttribute('aria-expanded', 'true');
+        item.classList.add('dropdown-open');
+      }
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!header.contains(event.target)) {
+      dropdownTriggers.forEach((trigger) => {
+        trigger.setAttribute('aria-expanded', 'false');
+        trigger.closest('.nav-item').classList.remove('dropdown-open');
+      });
+    }
+  });
+
+  header.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      dropdownTriggers.forEach((trigger) => {
+        trigger.setAttribute('aria-expanded', 'false');
+        trigger.closest('.nav-item').classList.remove('dropdown-open');
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
